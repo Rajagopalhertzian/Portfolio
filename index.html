@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Gopal S - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Raja Gopal S</h1>
+            
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Computer Science graduate passionate about Data Science, AI, and solving real-world problems using cutting-edge technologies.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>Python</p>
+                <div class="progress-bar" data-skill="90"></div>
+            </div>
+            <div class="skill">
+                <p>Machine Learning</p>
+                <div class="progress-bar" data-skill="85"></div>
+            </div>
+            <div class="skill">
+                <p>AI & Neural Networks</p>
+                <div class="progress-bar" data-skill="80"></div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Medical Image Captioning</h3>
+                <p>Memory-based RNN model for X-ray analysis.</p>
+            </div>
+            <div class="project-card">
+                <h3>World GDP Prediction</h3>
+                <p>Regression model for GDP forecasting.</p>
+            </div>
+            <div class="project-card">
+                <h3>Snake Game</h3>
+                <p>AI-based Q-learning implementation for optimized gameplay.</p>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <ul>
+                <li><a href="#" class="certificate-link" data-name="Data Science" data-description="Issued by Besant Technologies, 2024" data-image="assets/certificate1.jpg">Data Science</a></li>
+                <li><a href="#" class="certificate-link" data-name="Artificial Intelligence" data-description="Issued by Immensphere, 2023" data-image="assets/certificate2.jpg">AI Certificate</a></li>
+            </ul>
+        </section>
+
+        <section id="internships">
+            <h2>Internships</h2>
+            <ul>
+                <li><a href="#" class="internship-link" data-title="Data Science Internship" data-company="Futurecon Technologies" data-description="GDP prediction and data analytics techniques" data-date="2024">Futurecon Technologies</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:rajagopal120021@gmail.com">rajagopal120021@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Rajagopalhertzian" target="_blank">Rajagopalhertzian</a></p>
+        </section>
+    </main>
+
+    <button id="back-to-top" title="Back to top">&#8679;</button>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+            <img id="popup-image" src="" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Raja Gopal S. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
