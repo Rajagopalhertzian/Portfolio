@@ -1,64 +1,122 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Hero Section */
+/* Header Section */
 header {
-    background: linear-gradient(to right, #1e1e2f, #4c4c70);
+    background: linear-gradient(135deg, #4c8bf5, #6148d8);
     color: white;
     text-align: center;
     padding: 4rem 1rem;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 header p {
     font-size: 1.2rem;
-}
-
-header .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    background: #e63946;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Skills Progress Bars */
-.progress-bar {
-    background: #ddd;
-    height: 10px;
     margin: 0.5rem 0;
-    position: relative;
 }
 
-.progress-bar::after {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 0%;
-    background: #1e1e2f;
-    transition: width 1s ease;
+/* Navigation Bar */
+.navbar {
+    background: #333;
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
-/* Back to Top */
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    padding: 0.5rem 1rem;
-    background: #e63946;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.navbar a {
     color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #4c8bf5;
+}
+
+/* Sections */
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+    color: #4c8bf5;
+}
+
+/* Skills Section */
+.skill-category h3 {
+    margin-top: 1rem;
+    color: #6148d8;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    background: #f4f4f4;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-left: 4px solid #4c8bf5;
+}
+
+/* Projects Section */
+.project-card {
+    background: #f9f9f9;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+/* Certifications Section */
+.certification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.certification-list li {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-left: 4px solid #6148d8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
